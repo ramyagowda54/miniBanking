@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [miniBanking]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.guru99.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.guru99.TestCases.LoginDDT">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginCheck" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.guru99.TestCases.LoginDDT -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [miniBanking] -->
